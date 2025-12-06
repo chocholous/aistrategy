@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Strategic | Malé, chytré systémy pro váš byznys</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <a href="#" class="logo">
+                <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="8" fill="url(#logo-gradient)"/>
+                    <path d="M12 28L20 12L28 28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M15 22H25" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                    <circle cx="20" cy="18" r="2" fill="white"/>
+                    <defs>
+                        <linearGradient id="logo-gradient" x1="0" y1="0" x2="40" y2="40">
+                            <stop offset="0%" stop-color="#06B6D4"/>
+                            <stop offset="100%" stop-color="#0F172A"/>
+                        </linearGradient>
+                    </defs>
+                </svg>
+                <span>AI Strategic</span>
+            </a>
+            <div class="nav-links">
+                <a href="#services">Služby</a>
+                <a href="#process">Proces</a>
+                <a href="#case-study">Reference</a>
+                <a href="#faq">FAQ</a>
+                <a href="#contact" class="nav-cta">Kontakt</a>
+            </div>
+            <div class="nav-lang">
+                <button class="lang-btn active">CZ</button>
+                <button class="lang-btn">EN</button>
+                <button class="lang-btn">DE</button>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="grid-pattern"></div>
+            <div class="gradient-orb gradient-orb-1"></div>
+            <div class="gradient-orb gradient-orb-2"></div>
+        </div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <div class="hero-badge">
+                    <span class="pulse"></span>
+                    Dostupné pro nové projekty
+                </div>
+                <h1>
+                    <span class="gradient-text">Malé, chytré systémy</span>
+                    <br>pro váš byznys
+                </h1>
+                <p class="hero-description">
+                    Neprodávám zázraky s AI. Stavím praktická řešení, která vám ušetří hodiny práce týdně —
+                    <span class="mono-text">dashboardy</span>, <span class="mono-text">automatizace</span>,
+                    <span class="mono-text">propojení systémů</span>.
+                </p>
+                <div class="hero-cta">
+                    <a href="#contact" class="btn btn-primary">
+                        <span>Chci konzultaci zdarma</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                    <a href="#case-study" class="btn btn-secondary">Ukázka projektu</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="50">0</span><span class="stat-suffix">+</span>
+                        <span class="stat-label">Dokončených projektů</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="8">0</span><span class="stat-suffix">h</span>
+                        <span class="stat-label">Průměrná úspora týdně</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="24">0</span><span class="stat-suffix">h</span>
+                        <span class="stat-label">Do prvního prototypu</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="dashboard-preview">
+                    <div class="dashboard-header">
+                        <div class="dashboard-dots">
+                            <span></span><span></span><span></span>
+                        </div>
+                        <span class="dashboard-title">dashboard.app</span>
+                    </div>
+                    <div class="dashboard-content">
+                        <div class="dashboard-sidebar">
+                            <div class="sidebar-item active"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                            <div class="sidebar-item"></div>
+                        </div>
+                        <div class="dashboard-main">
+                            <div class="dashboard-card card-chart">
+                                <div class="mini-chart">
+                                    <svg viewBox="0 0 100 40" preserveAspectRatio="none">
+                                        <path class="chart-line" d="M0,35 Q25,30 35,20 T50,25 T75,10 T100,15" fill="none" stroke="url(#chart-gradient)" stroke-width="2"/>
+                                        <path class="chart-area" d="M0,35 Q25,30 35,20 T50,25 T75,10 T100,15 L100,40 L0,40 Z" fill="url(#chart-gradient-area)"/>
+                                        <defs>
+                                            <linearGradient id="chart-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                                                <stop offset="0%" stop-color="#06B6D4"/>
+                                                <stop offset="100%" stop-color="#F97316"/>
+                                            </linearGradient>
+                                            <linearGradient id="chart-gradient-area" x1="0%" y1="0%" x2="0%" y2="100%">
+                                                <stop offset="0%" stop-color="#06B6D4" stop-opacity="0.3"/>
+                                                <stop offset="100%" stop-color="#06B6D4" stop-opacity="0"/>
+                                            </linearGradient>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="card-label">Tržby</div>
+                                <div class="card-value">+23%</div>
+                            </div>
+                            <div class="dashboard-card card-metric">
+                                <div class="metric-icon">
+                                    <svg viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="#06B6D4" stroke-width="2"/>
+                                        <path d="M2 17L12 22L22 17" stroke="#06B6D4" stroke-width="2"/>
+                                        <path d="M2 12L12 17L22 12" stroke="#06B6D4" stroke-width="2"/>
+                                    </svg>
+                                </div>
+                                <div class="card-label">Objednávky</div>
+                                <div class="card-value">1,234</div>
+                            </div>
+                            <div class="dashboard-card card-status">
+                                <div class="status-bars">
+                                    <div class="status-bar" style="--width: 85%"></div>
+                                    <div class="status-bar" style="--width: 65%"></div>
+                                    <div class="status-bar" style="--width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="dashboard-card card-list">
+                                <div class="list-item"></div>
+                                <div class="list-item"></div>
+                                <div class="list-item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Floating elements -->
+                    <div class="floating-element float-1">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="#10B981" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M22 4L12 14.01L9 11.01" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        <span>Synchronizováno</span>
+                    </div>
+                    <div class="floating-element float-2">
+                        <div class="data-flow">
+                            <span class="flow-dot"></span>
+                            <span class="flow-dot"></span>
+                            <span class="flow-dot"></span>
+                        </div>
+                        <span>ERP → CRM</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Služby</span>
+                <h2>Co pro vás mohu postavit</h2>
+                <p>Žádný generic software. Každé řešení je šité na míru vašim procesům.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card service-card-large glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="4" y="8" width="40" height="32" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M4 16H44" stroke="currentColor" stroke-width="2"/>
+                            <rect x="8" y="20" width="16" height="8" rx="2" fill="currentColor" opacity="0.2"/>
+                            <rect x="8" y="32" width="12" height="4" rx="1" fill="currentColor" opacity="0.2"/>
+                            <rect x="28" y="20" width="12" height="16" rx="2" fill="currentColor" opacity="0.2"/>
+                        </svg>
+                    </div>
+                    <h3>Manažerské dashboardy</h3>
+                    <p>Všechna důležitá čísla na jednom místě. Žádné ruční kompilování Excelů — data se aktualizují automaticky v reálném čase.</p>
+                    <ul class="service-features">
+                        <li>Real-time metriky</li>
+                        <li>Mobilní přístup</li>
+                        <li>Automatické reporty</li>
+                    </ul>
+                    <div class="service-tag">Nejžádanější</div>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <circle cx="16" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="32" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                            <path d="M24 24H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M8 24L4 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M44 24L40 24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 12V8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M32 40V36" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Propojení systémů</h3>
+                    <p>ERP, CRM, WMS, helpdesk — propojím vaše existující nástroje, aby spolu komunikovaly.</p>
+                    <ul class="service-features">
+                        <li>API integrace</li>
+                        <li>Automatická synchronizace</li>
+                    </ul>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <rect x="8" y="4" width="32" height="40" rx="4" stroke="currentColor" stroke-width="2"/>
+                            <path d="M16 12H32" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 20H28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M16 28H24" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="32" cy="36" r="8" fill="currentColor" opacity="0.2"/>
+                            <path d="M30 36L32 38L36 34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Interní aplikace</h3>
+                    <p>Specializované nástroje pro konkrétní role — dispečery, obchodníky, operations.</p>
+                    <ul class="service-features">
+                        <li>Mobile-first</li>
+                        <li>Offline podpora</li>
+                    </ul>
+                </div>
+                <div class="service-card glass-card">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 48 48" fill="none">
+                            <path d="M24 4V12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M24 36V44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M4 24H12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M36 24H44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2"/>
+                            <circle cx="24" cy="24" r="3" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Automatizace procesů</h3>
+                    <p>Rutinní úkoly, které vás zdržují? Zautomatizuji je — od fakturace po reporty.</p>
+                    <ul class="service-features">
+                        <li>Úspora 5-15h týdně</li>
+                        <li>Zero-error procesy</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process" id="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Proces</span>
+                <h2>Jak spolupráce funguje</h2>
+                <p>Od prvního hovoru k funkčnímu řešení. Transparentně a bez překvapení.</p>
+            </div>
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M21 11.5C21.0034 12.8199 20.6951 14.1219 20.1 15.3C19.3944 16.7118 18.3098 17.8992 16.9674 18.7293C15.6251 19.5594 14.0782 19.9994 12.5 20C11.1801 20.0035 9.87812 19.6951 8.7 19.1L3 21L4.9 15.3C4.30493 14.1219 3.99656 12.8199 4 11.5C4.00061 9.92179 4.44061 8.37488 5.27072 7.03258C6.10083 5.69028 7.28825 4.6056 8.7 3.90003C9.87812 3.30496 11.1801 2.99659 12.5 3.00003H13C15.0843 3.11502 17.053 3.99479 18.5291 5.47089C20.0052 6.94699 20.885 8.91568 21 11V11.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Konzultace zdarma</h3>
+                        <p>30 minut video call. Probereme váš problém a já vám řeknu, jestli dává smysl ho řešit technologií.</p>
+                        <span class="step-time">30 min</span>
+                    </div>
+                    <div class="step-connector">
+                        <svg viewBox="0 0 24 80" fill="none">
+                            <path d="M12 0V80" stroke="url(#connector-gradient)" stroke-width="2" stroke-dasharray="4 4"/>
+                            <defs>
+                                <linearGradient id="connector-gradient" x1="12" y1="0" x2="12" y2="80" gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#06B6D4"/>
+                                    <stop offset="1" stop-color="#06B6D4" stop-opacity="0"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M14 2H6C5.46957 2 4.96086 2.21071 4.58579 2.58579C4.21071 2.96086 4 3.46957 4 4V20C4 20.5304 4.21071 21.0391 4.58579 21.4142C4.96086 21.7893 5.46957 22 6 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V8L14 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14 2V8H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16 13H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M16 17H8" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </div>
+                        <h3>Návrh řešení</h3>
+                        <p>Připravím detailní specifikaci s wireframy a odhadem. Víte přesně, co dostanete a za kolik.</p>
+                        <span class="step-time">2-3 dny</span>
+                    </div>
+                    <div class="step-connector">
+                        <svg viewBox="0 0 24 80" fill="none">
+                            <path d="M12 0V80" stroke="url(#connector-gradient)" stroke-width="2" stroke-dasharray="4 4"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M12 2L2 7L12 12L22 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 17L12 22L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2 12L12 17L22 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Rychlý prototyp</h3>
+                        <p>Do 24 hodin máte první funkční verzi. Můžete si osahat, jak to bude fungovat.</p>
+                        <span class="step-time">24 hodin</span>
+                    </div>
+                    <div class="step-connector">
+                        <svg viewBox="0 0 24 80" fill="none">
+                            <path d="M12 0V80" stroke="url(#connector-gradient)" stroke-width="2" stroke-dasharray="4 4"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-content glass-card">
+                        <div class="step-icon">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </div>
+                        <h3>Iterace & nasazení</h3>
+                        <p>Ladíme společně, dokud to není přesně podle vašich potřeb. Pak nasadíme do produkce.</p>
+                        <span class="step-time">1-4 týdny</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Study Section -->
+    <section class="case-study" id="case-study">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Reference</span>
+                <h2>Reálný příběh úspěchu</h2>
+            </div>
+            <div class="case-card glass-card">
+                <div class="case-header">
+                    <div class="case-company">
+                        <div class="company-logo">
+                            <span>A</span>
+                        </div>
+                        <div class="company-info">
+                            <h3>ARROW mobile s.r.o.</h3>
+                            <span>Logistika & distribuce</span>
+                        </div>
+                    </div>
+                    <div class="case-tags">
+                        <span class="tag">Dashboard</span>
+                        <span class="tag">Automatizace</span>
+                        <span class="tag">Integrace</span>
+                    </div>
+                </div>
+                <div class="case-content">
+                    <div class="case-problem">
+                        <h4>Problém</h4>
+                        <p>Dispečeři trávili 2 hodiny denně ručním přepisováním dat mezi systémy. Management neměl přehled o klíčových metrikách v reálném čase.</p>
+                    </div>
+                    <div class="case-solution">
+                        <h4>Řešení</h4>
+                        <p>Vytvořil jsem centrální dashboard propojený s jejich ERP a WMS. Automatizoval jsem rutinní reporty a notifikace.</p>
+                    </div>
+                </div>
+                <div class="case-results">
+                    <div class="result">
+                        <span class="result-value"><span class="mono-text" data-count="10">0</span>h</span>
+                        <span class="result-label">Ušetřeno týdně</span>
+                    </div>
+                    <div class="result">
+                        <span class="result-value"><span class="mono-text" data-count="3">0</span> dny</span>
+                        <span class="result-label">Do prvního prototypu</span>
+                    </div>
+                    <div class="result">
+                        <span class="result-value"><span class="mono-text" data-count="100">0</span>%</span>
+                        <span class="result-label">Eliminace chyb</span>
+                    </div>
+                </div>
+                <blockquote class="case-quote">
+                    <p>"Konečně vidím všechna čísla na jednom místě. Ušetřili jsme minimálně 10 hodin práce týdně."</p>
+                    <cite>— Jan Novák, Operations Manager</cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideal Client Section -->
+    <section class="ideal-client">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Pro koho to je</span>
+                <h2>Ideální klient</h2>
+            </div>
+            <div class="client-grid">
+                <div class="client-card glass-card client-yes">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M22 11.08V12C21.9988 14.1564 21.3005 16.2547 20.0093 17.9818C18.7182 19.709 16.9033 20.9725 14.8354 21.5839C12.7674 22.1953 10.5573 22.1219 8.53447 21.3746C6.51168 20.6273 4.78465 19.2461 3.61096 17.4371C2.43727 15.628 1.87979 13.4881 2.02168 11.3363C2.16356 9.18455 2.99721 7.13631 4.39828 5.49706C5.79935 3.85781 7.69279 2.71537 9.79619 2.24013C11.8996 1.7649 14.1003 1.98232 16.07 2.85999" stroke="currentColor" stroke-width="2"/>
+                            <path d="M22 4L12 14.01L9 11.01" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h3>Tohle je pro vás</h3>
+                    <ul>
+                        <li>Máte konkrétní proces, který vás zdržuje</li>
+                        <li>Potřebujete řešení rychle, ne za půl roku</li>
+                        <li>Chcete partnera, ne dodavatele</li>
+                        <li>Oceníte přímou komunikaci bez korporátního bullshitu</li>
+                        <li>Firma 5-100 zaměstnanců</li>
+                    </ul>
+                </div>
+                <div class="client-card glass-card client-no">
+                    <div class="client-icon">
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2"/>
+                            <path d="M15 9L9 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M9 9L15 15" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Tohle pro vás není</h3>
+                    <ul>
+                        <li>Hledáte "AI které udělá všechno"</li>
+                        <li>Potřebujete komplexní ERP systém</li>
+                        <li>Máte neomezený čas a budget na enterprise řešení</li>
+                        <li>Chcete 50stránkovou dokumentaci před prvním řádkem kódu</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">FAQ</span>
+                <h2>Časté otázky</h2>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Kolik to stojí?</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Menší projekty (dashboardy, jednoduché automatizace) typicky <span class="mono-text">30-80k Kč</span>. Komplexnější řešení s integracemi <span class="mono-text">80-200k Kč</span>. Přesnou cenu dostanete v návrhu řešení — zdarma a nezávazně.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Jak dlouho to trvá?</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>První prototyp obvykle do <span class="mono-text">24-48 hodin</span>. Hotové řešení v produkci typicky za <span class="mono-text">1-4 týdny</span> podle komplexity.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Jaké technologie používáte?</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Moderní stack: <span class="mono-text">React/Next.js</span> pro frontend, <span class="mono-text">Node.js/Python</span> pro backend, cloud hosting (AWS/Vercel). Ale to je moje starost — vy řešíte jen výsledek.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-card">
+                    <button class="faq-question">
+                        <span>Co když nebudeme spokojení?</span>
+                        <svg viewBox="0 0 24 24" fill="none">
+                            <path d="M6 9L12 15L18 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Iterujeme, dokud to není přesně podle vašich potřeb. Navíc — první konzultace je zdarma a návrh řešení nezávazný. Máte čas se rozhodnout.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper glass-card">
+                <div class="contact-info">
+                    <span class="section-label">Kontakt</span>
+                    <h2>Pojďme to probrat</h2>
+                    <p>30 minut konzultace zdarma. Probereme váš problém a já vám řeknu, jestli a jak ho můžeme vyřešit.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2"/>
+                                <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <a href="mailto:info@aistrategic.cz">info@aistrategic.cz</a>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none">
+                                <path d="M22 16.92V19.92C22.0011 20.1985 21.9441 20.4742 21.8325 20.7294C21.7209 20.9845 21.5573 21.2136 21.3521 21.4019C21.1468 21.5901 20.9046 21.7335 20.6407 21.8227C20.3769 21.9119 20.0974 21.9451 19.82 21.92C16.7428 21.5856 13.787 20.5341 11.19 18.85C8.77382 17.3147 6.72533 15.2662 5.18999 12.85C3.49997 10.2412 2.44824 7.27099 2.11999 4.18C2.09501 3.90347 2.12787 3.62476 2.2165 3.36162C2.30513 3.09849 2.44756 2.85669 2.63476 2.65162C2.82196 2.44655 3.0498 2.28271 3.30379 2.17052C3.55777 2.05833 3.83233 2.00026 4.10999 2H7.10999C7.5953 1.99522 8.06579 2.16708 8.43376 2.48353C8.80173 2.79999 9.04207 3.23945 9.10999 3.72C9.23662 4.68007 9.47144 5.62273 9.80999 6.53C9.94454 6.88792 9.97366 7.27691 9.8939 7.65088C9.81415 8.02485 9.62886 8.36811 9.35999 8.64L8.08999 9.91C9.51355 12.4135 11.5865 14.4864 14.09 15.91L15.36 14.64C15.6319 14.3711 15.9751 14.1858 16.3491 14.1061C16.7231 14.0263 17.1121 14.0555 17.47 14.19C18.3773 14.5286 19.3199 14.7634 20.28 14.89C20.7658 14.9585 21.2094 15.2032 21.5265 15.5775C21.8437 15.9518 22.0122 16.4296 22 16.92Z" stroke="currentColor" stroke-width="2"/>
+                            </svg>
+                            <a href="tel:+420123456789">+420 123 456 789</a>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Jméno</label>
+                        <input type="text" id="name" name="name" placeholder="Jan Novák" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="jan@firma.cz" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Jak vám mohu pomoci?</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Popište váš problém nebo projekt..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <span>Odeslat zprávu</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4 10H16M16 10L11 5M16 10L11 15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">
+                        <svg class="logo-icon" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <rect width="40" height="40" rx="8" fill="url(#logo-gradient-footer)"/>
+                            <path d="M12 28L20 12L28 28" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M15 22H25" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+                            <circle cx="20" cy="18" r="2" fill="white"/>
+                            <defs>
+                                <linearGradient id="logo-gradient-footer" x1="0" y1="0" x2="40" y2="40">
+                                    <stop offset="0%" stop-color="#06B6D4"/>
+                                    <stop offset="100%" stop-color="#0F172A"/>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                        <span>AI Strategic</span>
+                    </a>
+                    <p>Malé, chytré systémy pro váš byznys.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#services">Služby</a>
+                    <a href="#process">Proces</a>
+                    <a href="#case-study">Reference</a>
+                    <a href="#faq">FAQ</a>
+                    <a href="#contact">Kontakt</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 AI Strategic. Všechna práva vyhrazena.</p>
+                <p class="footer-legal">IČO: 12345678 | Sídlo: Praha, Česká republika</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
